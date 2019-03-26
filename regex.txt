@@ -1,0 +1,39 @@
+the character \d can be used in place of any digit from 0 to 9. The preceding slash distinguishes it from the simple d character and indicates that it is a metacharacter.
+
+\. wildcard 
+
+the pattern [abc] will only match a single a, b, or c letter and nothing else.
+
+the pattern [^abc] will match any single character except for the letters a, b, or c.
+
+the pattern [0-6] will only match any single digit character from zero to six, and nothing else. And likewise, [^n-p] will only match any single character except for letters n to p.
+
+\w metacharacter which is equivalent to the character range [A-Za-z0-9_] and often used to match characters in English text.
+
+a{3} will match the a character exactly three times
+
+
+a{1,3} will match the a character no more than 3 times, but no less than once for example.
+
+the pattern \d* to match any number of digits, but a tighter regular expression would be \d+ which ensures that the input string has at least one digit.
+
+ab?c will match either the strings "abc" or "ac" because the b is considered optional.
+
+\s whitespaces
+
+start and the end of the line using the special ^ (hat) and $ (dollar sign) metacharacters.
+
+
+^(IMG(\d+))\.png$
+
+
+
+
+digits using \d
+whitespace using \s
+alphanumeric letters and digits using \w
+\D represents any non-digit character
+\S any non-whitespace character
+ \W any non-alphanumeric character (such as punctuation)
+\b which matches the boundary between a word 
+ \0 (usually the full matched text), \1 (group 1), \2 (group 2)
